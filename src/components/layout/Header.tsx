@@ -89,8 +89,8 @@ export function Header() {
   const [policyMenuOpen, setPolicyMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full z-50 bg-[#1a0b2e]/80 backdrop-blur-sm text-white">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="relative z-50 w-full bg-[#1a0b2e] backdrop-blur-sm text-white">
+      <nav className="container mx-auto px-4 py-1 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/logo.png" alt="Astrowallas Logo" width={150} height={50} />
