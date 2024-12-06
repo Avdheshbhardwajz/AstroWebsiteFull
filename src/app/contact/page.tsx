@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,51 +10,30 @@ import { Facebook, Instagram, Twitter, Mail, Phone, Globe, MapPin, Clock } from 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#1a0b2e] text-white py-16">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="container mx-auto px-4"
-      >
+      <div className="container mx-auto px-4 animate-fadeIn">
         <h1 className="text-5xl font-bold text-center mb-12">Contact Us</h1>
         
         <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+          <div className="animate-slideInLeft">
             <p className="text-lg mb-8 text-purple-200">
               We would love to hear from you! Whether you are looking to book a consultation, have questions about our services, or need more information, Astrowallas is here to assist you. Our team is ready to provide the guidance you need.
             </p>
             <ContactForm />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+          </div>
+          <div className="animate-slideInRight">
             <ContactInfo />
-          </motion.div>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
+          <div className="animate-fadeInUp">
             <SocialMedia />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
+          </div>
+          <div className="animate-fadeInUp delay-200">
             <OfficeHours />
-          </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }
@@ -104,7 +82,7 @@ function ContactForm() {
               name="email"
               value={formState.email}
               onChange={handleChange}
-              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300" 
+              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300"
             />
           </div>
           <div>
@@ -113,7 +91,7 @@ function ContactForm() {
               name="subject"
               value={formState.subject}
               onChange={handleChange}
-              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300" 
+              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300"
             />
           </div>
           <div>
@@ -122,10 +100,13 @@ function ContactForm() {
               name="message"
               value={formState.message}
               onChange={handleChange}
-              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300" 
+              className="bg-[#3d2b5e] border-purple-400 text-white placeholder-purple-300 min-h-[150px]"
             />
           </div>
-          <Button type="submit" className="w-full bg-purple-600 hover:bg-purple-700 text-white transition-colors duration-300">
+          <Button 
+            type="submit" 
+            className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+          >
             Send Message
           </Button>
         </form>
@@ -141,21 +122,21 @@ function ContactInfo() {
         <CardTitle className="text-2xl font-bold text-white">Contact Information</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
-        <div className="flex items-center text-purple-200 hover:text-white transition-colors duration-300">
-          <Phone className="mr-4 text-purple-400" />
-          <span>+91 (Phone number not provided)</span>
+        <div className="flex items-center space-x-4">
+          <Phone className="text-purple-400" />
+          <span>+1 (555) 123-4567</span>
         </div>
-        <div className="flex items-center text-purple-200 hover:text-white transition-colors duration-300">
-          <Mail className="mr-4 text-purple-400" />
-          <span>support@astrowallas.com</span>
+        <div className="flex items-center space-x-4">
+          <Mail className="text-purple-400" />
+          <span>contact@astrowallas.com</span>
         </div>
-        <div className="flex items-center text-purple-200 hover:text-white transition-colors duration-300">
-          <Globe className="mr-4 text-purple-400" />
+        <div className="flex items-center space-x-4">
+          <Globe className="text-purple-400" />
           <span>www.astrowallas.com</span>
         </div>
-        <div className="flex items-center text-purple-200 hover:text-white transition-colors duration-300">
-          <MapPin className="mr-4 text-purple-400" />
-          <span>(Address not provided)</span>
+        <div className="flex items-center space-x-4">
+          <MapPin className="text-purple-400" />
+          <span>123 Astrology Lane, Mystic City, MC 12345</span>
         </div>
       </CardContent>
     </Card>
@@ -166,21 +147,18 @@ function SocialMedia() {
   return (
     <Card className="bg-[#2d1b4e] border-none shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-white">Connect With Us</CardTitle>
+        <CardTitle className="text-2xl font-bold text-white">Follow Us</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-6">
-        <div className="flex items-center">
-          <Facebook className="mr-4 text-purple-400" />
-          <a href="https://facebook.com/astrowallas" className="text-purple-200 hover:text-white transition-colors duration-300">facebook.com/astrowallas</a>
-        </div>
-        <div className="flex items-center">
-          <Instagram className="mr-4 text-purple-400" />
-          <a href="https://instagram.com/astrowallas" className="text-purple-200 hover:text-white transition-colors duration-300">instagram.com/astrowallas</a>
-        </div>
-        <div className="flex items-center">
-          <Twitter className="mr-4 text-purple-400" />
-          <a href="https://twitter.com/astrowallas" className="text-purple-200 hover:text-white transition-colors duration-300">twitter.com/astrowallas</a>
-        </div>
+      <CardContent className="flex space-x-6">
+        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+          <Facebook size={24} />
+        </a>
+        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+          <Instagram size={24} />
+        </a>
+        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+          <Twitter size={24} />
+        </a>
       </CardContent>
     </Card>
   )
@@ -193,20 +171,15 @@ function OfficeHours() {
         <CardTitle className="text-2xl font-bold text-white">Office Hours</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="flex items-center text-purple-200">
-          <Clock className="mr-4 text-purple-400" />
-          <span>Monday to Friday: 10:00 AM – 6:00 PM</span>
-        </div>
-        <div className="flex items-center text-purple-200">
-          <Clock className="mr-4 text-purple-400" />
-          <span>Saturday: 11:00 AM – 4:00 PM</span>
-        </div>
-        <div className="flex items-center text-purple-200">
-          <Clock className="mr-4 text-purple-400" />
-          <span>Sunday: Closed</span>
+        <div className="flex items-center space-x-4">
+          <Clock className="text-purple-400" />
+          <div>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
         </div>
       </CardContent>
     </Card>
   )
 }
-
