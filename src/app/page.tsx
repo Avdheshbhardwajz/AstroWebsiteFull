@@ -18,25 +18,25 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center">
-      <Image
-        src="/astro-bg.jpg"
+    <section className="relative h-screen flex justify-center items-center">
+      {/* <Image
+        src="/heroSection.jpg"
         alt="Astrology Background"
         layout="fill"
         objectFit="cover"
         className="z-0"
-      />
-      <div className="container mx-auto px-4 z-10 flex justify-between items-center">
-        <div className="max-w-2xl">
+      /> */}
+      <div className="container  px-4 z-10 flex flex-row flex-wrap-reverse gap-10 justify-center items-center ">
+        <div className="max-w-2xl text-center">
           <h1 className="text-5xl font-bold mb-4">Welcome to Astrowallas</h1>
           <p className="text-2xl mb-8">Discover the Power of Prediction</p>
           <Button size="lg" className="bg-purple-600 hover:bg-purple-700">Get Started</Button>
         </div>
-        <div className="hidden md:block">
+        <div className=" md:block border-2 border-white border-double ">
           <Image
-            src="/expert-image.jpg"
+            src="/heroSection.jpg"
             alt="Dr. Sugandha Rawat"
-            width={300}
+            width={700}
             height={400}
             className="rounded-lg shadow-lg"
           />
@@ -80,11 +80,11 @@ function ExpertSection() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
             <Image
-              src="/expert-full.jpg"
+              src="/MentorImage.jpg"
               alt="Dr. Sugandha Rawat"
               width={400}
               height={600}
-              className="rounded-lg shadow-lg"
+              className="border-2 border-white border-double shadow-lg"
             />
           </div>
           <div className="md:w-2/3">
@@ -159,13 +159,13 @@ function CoursesSection() {
 
   return (
     <section className="py-20 relative text-white">
-      <Image
+      {/* <Image
         src="/courses-bg.jpg"
         alt="Courses Background"
         layout="fill"
         objectFit="cover"
         className="z-0"
-      />
+      /> */}
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold mb-4 text-center">Courses</h2>
         <h3 className="text-2xl mb-12 text-center">Our Best Tutorials</h3>

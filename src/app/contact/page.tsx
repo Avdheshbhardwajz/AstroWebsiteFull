@@ -117,7 +117,7 @@ function ContactForm() {
 
 function ContactInfo() {
   return (
-    <Card className="bg-[#2d1b4e] border-none shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
+    <Card className="bg-[#2d1b4e] text-white border-none shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-white">Contact Information</CardTitle>
       </CardHeader>
@@ -166,7 +166,7 @@ function SocialMedia() {
 
 function OfficeHours() {
   return (
-    <Card className="bg-[#2d1b4e] border-none shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
+    <Card className="bg-[#2d1b4e] border-none shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300 text-white">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-white">Office Hours</CardTitle>
       </CardHeader>

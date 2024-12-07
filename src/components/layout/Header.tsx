@@ -93,7 +93,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-1 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
-            <Image src="/logo.png" alt="Astrowallas Logo" width={150} height={50} />
+            <Image src="/Logo.png" alt="Astrowallas Logo" width={100} height={50} />
           </Link>
         </div>
         
