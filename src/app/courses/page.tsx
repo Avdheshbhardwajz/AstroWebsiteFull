@@ -16,13 +16,13 @@ export default function CoursesPage() {
 function HeroSection() {
   return (
     <section className="relative py-20">
-      <Image
+      {/* <Image
         src="/astro-bg.jpg"
         alt="Astrology Background"
         layout="fill"
         objectFit="cover"
         className="z-0"
-      />
+      /> */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">

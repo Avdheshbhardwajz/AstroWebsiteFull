@@ -11,11 +11,11 @@ export default function AboutUsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <Image
-              src="/about-us-image.jpg"
+              src="/MentorImage.jpg"
               alt="Dr. Sugandha Rawat"
               width={500}
               height={500}
-              className="rounded-lg shadow-lg"
+              className="border-2 border-white border-double shadow-lg"
             />
           </div>
           <div>

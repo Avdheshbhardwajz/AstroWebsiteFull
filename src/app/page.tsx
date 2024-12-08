@@ -192,10 +192,10 @@ function CoursesSection() {
 
 function TestimonialsSection() {
   const testimonials = [
-    { name: "Priya Sharma", location: "Delhi" },
-    { name: "Rahul Patel", location: "Mumbai" },
-    { name: "Anita Desai", location: "Bangalore" },
-    { name: "Vikram Singh", location: "Jaipur" },
+    { name: "Priya Sharma", location: "Delhi" , url : "/Studentfeedback.jpg" },
+    { name: "Rahul Patel", location: "Mumbai" , url : "/studentFeedback1.jpg" },
+    { name: "Anita Desai", location: "Bangalore" , url : "/studentFeedback2.jpg" },
+    { name: "Vikram Singh", location: "Jaipur" , url : "/studentFeedback3.jpg" },
   ]
 
   return (
@@ -207,17 +207,18 @@ function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-[#3d2b5e] border-none text-white">
               <CardContent className="p-6">
-                <div className="aspect-w-16 aspect-h-9 mb-4">
+                <div className="w-full h-auto mb-4">
                   <Image
-                    src={`/testimonial-${index + 1}.jpg`}
+                    src={testimonial.url}
                     alt={`Testimonial by ${testimonial.name}`}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg"
+                    width={300}
+                    height={200}
+                    className="border-2 border-double  w-full h-auto"
+                    style={{ objectFit: 'contain' }}
                   />
                 </div>
-                <h4 className="text-xl font-bold">{testimonial.name}</h4>
-                <p className="text-purple-300">{testimonial.location}</p>
+                {/* <h4 className="text-xl font-bold">{testimonial.name}</h4>
+                <p className="text-purple-300">{testimonial.location}</p> */}
               </CardContent>
             </Card>
           ))}
@@ -226,4 +227,3 @@ function TestimonialsSection() {
     </section>
   )
 }
-
