@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import { CourseForm } from '@/components/CourseForm'
 import { CourseCarousel } from '@/components/CourseCarousel'
 //import { Button } from "@/components/ui/button"
