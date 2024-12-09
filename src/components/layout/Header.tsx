@@ -69,6 +69,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from 'lucide-react'
+import { PopupForm } from '../PopupForm'
 
 const mainNavItems = [
   { name: 'Home', href: '/' },
@@ -135,9 +136,11 @@ export function Header() {
         </div>
 
         <div className="hidden md:block">
+          <PopupForm>
           <Button className="bg-purple-600 hover:bg-purple-700">
             Book a Consultation
           </Button>
+          </PopupForm>
         </div>
 
         <div className="md:hidden">
@@ -177,9 +180,11 @@ export function Header() {
             </div>
             
             <div className="px-3 py-2">
+              <PopupForm>
               <Button className="w-full bg-purple-600 hover:bg-purple-700">
                 Book a Consultation
               </Button>
+           </PopupForm> 
             </div>
           </div>
         </div>
