@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { PopupForm } from '@/components/PopupForm'
 
 export default function AboutUsPage() {
   return (
@@ -58,9 +59,11 @@ export default function AboutUsPage() {
             We also offer online courses and workshops designed to help you learn and deepen your understanding of astrology and other occult sciences. Whether you are a beginner or an advanced enthusiast, Astrowallas has something for everyone.
           </p>
           <div className="text-center">
+            <PopupForm>
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
               Explore Our Courses
             </Button>
+            </PopupForm>
           </div>
         </div>
 
@@ -70,9 +73,11 @@ export default function AboutUsPage() {
             <p className="text-lg mb-6">
               Embark on a transformative journey toward understanding and improving your life with Astrowallas.
             </p>
+            <PopupForm>
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
               Book a Consultation
             </Button>
+            </PopupForm>
           </CardContent>
         </Card>
       </div>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 //import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { PopupForm } from '@/components/PopupForm'
 
 export default function Home() {
   return (
@@ -30,7 +31,9 @@ function HeroSection() {
         <div className="max-w-2xl text-center">
           <h1 className="text-5xl font-bold mb-4">Welcome to Astrowallas</h1>
           <p className="text-2xl mb-8">Discover the Power of Prediction</p>
+          <PopupForm>
           <Button size="lg" className="bg-purple-600 hover:bg-purple-700">Get Started</Button>
+          </PopupForm>
         </div>
         <div className=" md:block border-2 border-white border-double ">
           <Image
@@ -137,7 +140,9 @@ function ReadingsSection() {
                 <p className="mb-6">{reading.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-bold">₹{reading.price}</span>
+                  <PopupForm>
                   <Button className="bg-purple-600 hover:bg-purple-700">Book Now</Button>
+                  </PopupForm>
                 </div>
               </CardContent>
             </Card>
@@ -182,7 +187,9 @@ function CoursesSection() {
           </div>
           <div className="flex flex-col justify-center items-end">
             <p className="text-3xl font-bold mb-4">₹8,000</p>
+            <PopupForm>
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700">Enroll Now</Button>
+            </PopupForm>
           </div>
         </div>
       </div>
