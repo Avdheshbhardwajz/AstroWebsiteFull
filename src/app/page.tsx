@@ -37,7 +37,7 @@ function HeroSection() {
         className="z-0"
       /> */}
       <div className="container  px-4 z-10 flex flex-row flex-wrap-reverse gap-10 justify-center items-center ">
-        <div className="max-w-2xl text-center md:text-left w-1/2">
+        <div className="max-w-2xl text-center md:text-left md:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Astrowallas</h1>
           <p className="text-xl md:text-2xl mb-8">Discover the Power of Prediction</p>
           
