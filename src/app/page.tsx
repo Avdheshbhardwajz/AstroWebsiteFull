@@ -373,17 +373,18 @@ function ExpertSection() {
 
 function ReadingsSection() {
   const readings = [
-    {
+    {  url : "/KundaliMilan.png" , 
       title: "Kundli Milan",
       description: "Curious if they're the one for you? Dive deep into your compatibility, uncover potential challenges, and discover where your strengths as a couple lie. Discover how your stars align, gain personalized remedies, and create a stronger, more harmonious bond with expert astrological guidance.",
       price: 3000,
+      
     },
-    {
+    {  url : "/tarotReading.png" , 
       title: "Tarot Reading",
       description: "Uncover the answers to your deepest questions with Tarot Reading. Explore your past, present, and future to gain clarity, guidance, and insight into life's challenges and opportunities. Receive powerful remedies and personalized advice from one of India's leading astrologers to navigate your journey with confidence.",
       price: 2000,
     },
-    {
+    {  url : "/vedicHoroscope.png" , 
       title: "Vedic Horoscope",
       description: "Guided by one of India's leading astrologers, tap into the ancient wisdom of Vedic Astrology to find clarity and direction in your life. Understand your strengths, challenges, and potential through your birth chart, and uncover practical remedies to overcome obstacles and create a more fulfilling future.",
       price: 3000,
@@ -400,6 +401,14 @@ function ReadingsSection() {
             {readings.map((reading, index) => (
               <Card key={index} className="bg-[#3d2b5e] border-none text-white">
                 <CardContent className="p-6">
+                <Image
+                      src={reading.url}
+                      alt={`${reading.title}`}
+                      width={500}
+                      height={200}
+                      className="  w-full h-auto "
+                      style={{ objectFit: 'contain' }}
+                    />
                   <h4 className="text-2xl font-bold mb-4">{reading.title}</h4>
                   <p className="mb-6">{reading.description}</p>
                   <div className="flex justify-between items-center">
