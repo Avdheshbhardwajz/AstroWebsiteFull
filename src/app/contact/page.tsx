@@ -124,11 +124,11 @@ function ContactInfo() {
       <CardContent className="space-y-6">
         <div className="flex items-center space-x-4">
           <Phone className="text-purple-400" />
-          <span>+1 (555) 123-4567</span>
+          <span>+91 8791182343</span>
         </div>
         <div className="flex items-center space-x-4">
           <Mail className="text-purple-400" />
-          <span>contact@astrowallas.com</span>
+          <span>info@astrowallas.com</span>
         </div>
         <div className="flex items-center space-x-4">
           <Globe className="text-purple-400" />
@@ -136,7 +136,9 @@ function ContactInfo() {
         </div>
         <div className="flex items-center space-x-4">
           <MapPin className="text-purple-400" />
-          <span>123 Astrology Lane, Mystic City, MC 12345</span>
+          <span>B 73
+Motikunj
+Mathura 281001 , Uttar Pradesh India</span>
         </div>
       </CardContent>
     </Card>
@@ -150,13 +152,13 @@ function SocialMedia() {
         <CardTitle className="text-2xl font-bold text-white">Follow Us</CardTitle>
       </CardHeader>
       <CardContent className="flex space-x-6">
-        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+        <a href="http://www.youtube.com/@ASTROwallas" className="text-purple-400 hover:text-purple-300 transition-colors">
           <Facebook size={24} />
         </a>
-        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+        <a href="http://www.youtube.com/@ASTROwallas" className="text-purple-400 hover:text-purple-300 transition-colors">
           <Instagram size={24} />
         </a>
-        <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors">
+        <a href="http://twitter.com/astrowallas" className="text-purple-400 hover:text-purple-300 transition-colors">
           <Twitter size={24} />
         </a>
       </CardContent>

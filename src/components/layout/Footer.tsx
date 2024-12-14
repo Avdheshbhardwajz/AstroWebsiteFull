@@ -17,26 +17,28 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link href="/about" className="hover:text-purple-400 transition-colors">About Us</Link></li>
               <li><Link href="/courses" className="hover:text-purple-400 transition-colors">Courses</Link></li>
-              <li><Link href="/consultations" className="hover:text-purple-400 transition-colors">Consultations</Link></li>
-              <li><Link href="/blog" className="hover:text-purple-400 transition-colors">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-purple-400 transition-colors">Contact us</Link></li>
+              <li><Link href="/faq" className="hover:text-purple-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <p className="text-sm">
-              123 Astro Street, Cosmic City<br />
-              Universe, 12345<br />
-              Phone: +1 (123) 456-7890<br />
+            B 73
+Motikunj
+Mathura 281001<br />
+              Uttar Pradesh, India<br />
+              Phone: +91 8791182343<br />
               Email: info@astrowallas.com
             </p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-purple-400 transition-colors"><Facebook /></a>
-              <a href="#" className="hover:text-purple-400 transition-colors"><Instagram /></a>
-              <a href="#" className="hover:text-purple-400 transition-colors"><Twitter /></a>
-              <a href="#" className="hover:text-purple-400 transition-colors"><Youtube /></a>
+              <a href="http://facebook.com/astrowallas" className="hover:text-purple-400 transition-colors"><Facebook /></a>
+              <a href="http://facebook.com/astrowallas" className="hover:text-purple-400 transition-colors"><Instagram /></a>
+              <a href="http://twitter.com/astrowallas" className="hover:text-purple-400 transition-colors"><Twitter /></a>
+              <a href="http://www.youtube.com/@ASTROwallas" className="hover:text-purple-400 transition-colors"><Youtube /></a>
             </div>
           </div>
         </div>

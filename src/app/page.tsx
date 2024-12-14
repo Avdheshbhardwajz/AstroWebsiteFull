@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { PopupForm } from '@/components/PopupForm'
 import { useRouter } from 'next/navigation';
+import AnimatedImage from '@/components/AnimatedImage';
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ function HeroSection() {
   };
 
   return (
-    <section className="relative h-screen flex justify-center items-center">
+    <section className="relative h-screen flex justify-center items-center py-12">
       {/* <Image
         src="/heroSection.jpg"
         alt="Astrology Background"
@@ -36,21 +37,15 @@ function HeroSection() {
         className="z-0"
       /> */}
       <div className="container  px-4 z-10 flex flex-row flex-wrap-reverse gap-10 justify-center items-center ">
-        <div className="max-w-2xl text-center">
-          <h1 className="text-5xl font-bold mb-4">Welcome to Astrowallas</h1>
-          <p className="text-2xl mb-8">Discover the Power of Prediction</p>
+        <div className="max-w-2xl text-center md:text-left w-1/2">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Astrowallas</h1>
+          <p className="text-xl md:text-2xl mb-8">Discover the Power of Prediction</p>
           
           <Button size="lg" className="bg-purple-600 hover:bg-purple-700" onClick={handleGetStartedClick}>Get Started</Button>
           
         </div>
-        <div className=" md:block border-2 border-white border-double ">
-          <Image
-            src="/heroSection.jpg"
-            alt="Dr. Sugandha Rawat"
-            width={700}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
+        <div className="w-[450px] flex justify-center  ">
+          <AnimatedImage/>
         </div>
       </div>
     </section>
