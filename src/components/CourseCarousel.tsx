@@ -8,23 +8,23 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const courses = [
   {
     title: "Master the 5000 years old Vedic Astrology",
-    image: "/course-vedic-astrology.jpg",
+    image: "/Master the 5000 years old Vedic Astrology.jpg",
   },
   {
     title: "Unlock the Secrets of Vedic Vastu & Feng Shui",
-    image: "/course-vastu-fengshui.jpg",
+    image: "/Unlock the Secrets of Vedic Vastu & Feng Shui.jpg",
   },
   {
     title: "Unveil Your Future with Tarot",
-    image: "/course-tarot.jpg",
+    image: "/Unveil Your Future with Tarot.jpg",
   },
   {
     title: "Decode Your Destiny with Face Reading",
-    image: "/course-face-reading.jpg",
+    image: "/Decode Your Destiny with Face Reading 1.jpg",
   },
   {
     title: "Discover Your True Potential with Numerology",
-    image: "/course-numerology.jpg",
+    image: "/Discover Your True Potential with Numerology.jpg",
   },
 ]
 
