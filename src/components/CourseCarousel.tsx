@@ -1,9 +1,15 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const courses = [
   {
@@ -15,7 +21,7 @@ const courses = [
     image: "/Unlock the Secrets of Vedic Vastu & Feng Shui.jpg",
   },
   {
-    title: "Unveil Your Future with Tarot",
+    title: "Align Your Space with Vastu Shastra",
     image: "/Unveil Your Future with Tarot.jpg",
   },
   {
@@ -26,7 +32,7 @@ const courses = [
     title: "Discover Your True Potential with Numerology",
     image: "/Discover Your True Potential with Numerology.jpg",
   },
-]
+];
 
 export function CourseCarousel() {
   return (
@@ -44,10 +50,14 @@ export function CourseCarousel() {
                     height={200}
                     className="rounded-lg mb-4"
                   />
-                  <h3 className="text-xl font-bold mb-2 text-center">{course.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-center">
+                    {course.title}
+                  </h3>
                   <p className="text-purple-300 mb-2">15 Sessions</p>
                   <p className="text-2xl font-bold mb-4">₹8,000</p>
-                  <Button className="bg-purple-600 hover:bg-purple-700">Enroll Now</Button>
+                  <Button className="bg-purple-600 hover:bg-purple-700">
+                    Enroll Now
+                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -57,6 +67,5 @@ export function CourseCarousel() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }
-

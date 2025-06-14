@@ -1,33 +1,32 @@
-import { Header } from '@/components/layout/Header'
-import './globals.css'
-import { Poppins } from 'next/font/google'
-import { Footer } from '@/components/layout/Footer'
+import { Header } from "@/components/layout/Header";
+import "./globals.css";
+import { Poppins } from "next/font/google";
+import { Footer } from "@/components/layout/Footer";
 
-const poppins = Poppins({ 
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  display: 'swap'
-})
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata = {
-  title: 'Astrowallas - Discover the Power of Prediction',
-  description: 'Learn Vedic Astrology, Tarot, Numerology, and Face Reading with Dr. Sugandha Rawat',
-}
+  title: "Astrowallas - Discover the Power of Prediction",
+  description:
+    "Learn Vedic Astrology, Vastu Shastra, Numerology, and Face Reading with Dr. Sugandha Rawat",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
-
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
-
