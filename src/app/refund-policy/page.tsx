@@ -41,7 +41,8 @@ export default function RefundPolicyPage() {
                 <li>
                   <strong>Online Courses/Workshops:</strong> You may request a
                   refund within 7 days if you are not satisfied with the course
-                  content. After 7 days, no refunds will be given.
+                  content. refund will be credited to your original payment
+                  method within 7 business days.
                 </li>
               </ul>
             </section>
